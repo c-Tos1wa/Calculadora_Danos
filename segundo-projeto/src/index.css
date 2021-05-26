@@ -1,0 +1,75 @@
+#fundo{
+  background-color: rgb(223, 215, 215);
+  border-style: solid;
+  border-radius: 5px;
+  border-color: black;
+}
+
+#primeira{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+#segunda{
+  display: flex;
+  justify-content: center;
+}
+
+.personagem{
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  cursor: pointer
+}
+
+h5{
+  text-align: center;
+}
+
+
+#quarta{
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+
+.arma{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  cursor: pointer
+}
+
+
+#botao{
+  color: white;
+  background-color: blue;
+  border-style: solid;
+  border-radius: 20px;
+  font-size:medium;
+  cursor: pointer;
+}
+
+.sexta{
+  display:flex;
+  justify-content:center;
+  margin-bottom: 20px;
+}
+
+.marcado{
+  border-style: solid;
+  border-radius: 3px;
+  border-color: blue;
+}
+
+#mensagem{
+  font-weight: bold;
+  display:flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
