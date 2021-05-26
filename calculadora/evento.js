@@ -5,28 +5,27 @@ function iniciar(){
      const criaturas = document.getElementsByClassName('terceira') 
      for (let i = 0; i < criaturas.length; i++){
          const clique = criaturas[i]; 
-         clique.addEventListener('click', selecionado) //em um clique, estiliza a classe de criaturas
+         clique.addEventListener('click', selecionado) 
      };
 
      const armas = document.getElementsByClassName('quinta')
      for (let i = 0; i < armas.length; i++){
          const clique2 = armas[i];
-         clique2.addEventListener('click', selecionado) //em um clique, estiliza a classe de armas
+         clique2.addEventListener('click', selecionado) 
      }
   
 }
-
 
 function selecionado(evento){
     const itemSelecionado = evento.target.parentElement 
 
     const divPai = itemSelecionado.parentElement 
-    const filho = divPai.children //cd um dos galhos da raiz
+    const filho = divPai.children 
     for (let i=0; i < filho.length; i++){
-        filho[i].classList.remove('marcado') //remover o box se tiver dois ao msm tempo
+        filho[i].classList.remove('marcado') 
     }
 
-    itemSelecionado.classList.add('marcado') //coloca um box cujas características estão no css
+    itemSelecionado.classList.add('marcado') 
 
     var idElemento = itemSelecionado.id
     var itemID = divPai.getAttribute('name')
@@ -40,8 +39,10 @@ function selecionado(evento){
 }
 
 
-function dano(evento){
-    let botaoDano = evento.target;
+function dano(){
+    var ataque = Math.floor(Math.random()*100) + 1;
+    var vida;
+    
     if (criaturaSelecionada == 'orc'){
         vida = 80
     }
@@ -52,8 +53,6 @@ function dano(evento){
         vida = 35
     };
 
-    var ataque = Math.floor(Math.random()*100) + 1;
-
     if (vida > ataque){
         alert('Não foi desta vez! Tente novamente')
     }
@@ -61,6 +60,3 @@ function dano(evento){
         alert('Parabéns! '+ criaturaSelecionada + 'foi derrotado(a)')
     }
 }
-
-
-
