@@ -58,7 +58,7 @@ class Calculadora extends React.Component{
       mensagem = 'Selecione um personagem e uma arma'
     }
     else if (forcaAtaque > vida){
-      mensagem = `Dano: ${dano}. Você venceu, ${this.state.monstro} derrotado!`
+      mensagem = `Dano: ${dano}. Você venceu, ${this.state.monstro} foi derrotado!`
     }
     else{
       mensagem = `Dano: ${dano}. Tente Novamente!`

@@ -57,6 +57,6 @@ function dano(){
         alert('Não foi desta vez! Tente novamente')
     }
     else {
-        alert('Parabéns! '+ criaturaSelecionada + 'foi derrotado(a)')
+        alert('Parabéns! ' + criaturaSelecionada + ' foi derrotado(a)')
     }
 }

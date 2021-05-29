@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+
 function Armas(props){
     let classCss = 'armas'
   if (props.marcado){
